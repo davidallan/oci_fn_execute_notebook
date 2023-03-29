@@ -30,6 +30,8 @@ Follow the regular function deployment pattern. I will not go through this here,
 [https://docs.oracle.com/en-us/iaas/Content/Functions/Tasks/functionsquickstartguidestop.htm](OCI Functions Quickstart)
 
 <h2>Sample Execution</h2>
+
 ```
 echo '{"jobName":"My Job", "logGroupId":"ocid1.loggroup.oc1.iad....", "compartmentId":"ocid1.compartment.oc1.....", "projectId":"ocid1.datascienceproject.oc1.iad.....",  "noteBook":"https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/customization/basics.ipynb", "outputFolder":"oci://bucket@namespace/helloworld"}' | fn invoke yourapp notebook
 ```
+
