@@ -27,7 +27,8 @@ Resource principal for testing from Workspaces for example;
 <h2>Function Deployment</h2>
 
 Follow the regular function deployment pattern. I will not go through this here, there are tutorials on Functions here;
-[https://docs.oracle.com/en-us/iaas/Content/Functions/Tasks/functionsquickstartguidestop.htm](OCI Functions Quickstart)
+
+[https://docs.oracle.com/en-us/iaas/Content/Functions/Tasks/functionsquickstartguidestop.htm] (OCI Functions Quickstart)
 
 <h2>Sample Execution</h2>
 
