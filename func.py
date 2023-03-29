@@ -65,7 +65,8 @@ def handler(ctx, data: io.BytesIO=None):
     # Start a job run
     run = job.run()
 
-    returnResponse = json.loads("{\"id\":\"" + run.id + "\"}")
+    # Returns the job run id (id) and the job id (jobId).
+    returnResponse = json.loads("{\"id\":\"" + run.id + "\", \"jobId\":\"" + job.id + "\"}")
 
     return response.Response(
         ctx, response_data=returnResponse, headers={"Content-Type": "application/json"}
