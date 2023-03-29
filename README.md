@@ -2,7 +2,7 @@
 <h2>Introduction</h2>
 This contains one OCI function to execute a sample Data Science notebook using OCI Data Science.
 
-There are various properties parameterized;
+There are various properties parameterized for demonstration purposes, more could be done such as shape and subnet, but for a publicly available ipynb this is all that is needed;
   * noteBook the Python notebook URL to use, for example you can use the sample provided here to test https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/customization/basics.ipynb
   * jobName provide the job name for the OCI Data Science job that will be launched
   * logGroupId the log group Ocid to be used.
@@ -35,4 +35,9 @@ Follow the regular function deployment pattern. I will not go through this here,
 ```
 echo '{"jobName":"My Job", "logGroupId":"ocid1.loggroup.oc1.iad....", "compartmentId":"ocid1.compartment.oc1.....", "projectId":"ocid1.datascienceproject.oc1.iad.....",  "noteBook":"https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/customization/basics.ipynb", "outputFolder":"oci://bucket@namespace/helloworld"}' | fn invoke yourapp notebook
 ```
+
+
+<h2>Orchestrating from OCI Data Integration</h2>
+
+See [https://blogs.oracle.com/dataintegration/post/oci-rest-task-collection-for-oci-data-integration] (Invoking Data Science via REST Tasks)
 
