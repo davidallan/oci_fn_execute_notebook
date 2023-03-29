@@ -24,6 +24,12 @@ Resource principal for testing from Workspaces for example;
 * allow any-user to manage log-groups in compartment YOURCOMPARTMENT where ALL {request.principal.type='disworkspace',request.principal.id='ocid1.disworkspace.oc1.iad....'}	
 * allow any-user to manage log-content in compartment YOURCOMPARTMENT where ALL {request.principal.type='disworkspace',request.principal.id='ocid1.disworkspace.oc1.iad....'}	
 
+<h2>Function Deployment</h2>
 
+Follow the regular function deployment pattern. I will not go through this here, there are tutorials on Functions here;
+[https://docs.oracle.com/en-us/iaas/Content/Functions/Tasks/functionsquickstartguidestop.htm](OCI Functions Quickstart)
 
-
+<h2>Sample Execution</h2>
+```
+echo '{"jobName":"My Job", "logGroupId":"ocid1.loggroup.oc1.iad....", "compartmentId":"ocid1.compartment.oc1.....", "projectId":"ocid1.datascienceproject.oc1.iad.....",  "noteBook":"https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/customization/basics.ipynb", "outputFolder":"oci://bucket@namespace/helloworld"}' | fn invoke yourapp notebook
+```
