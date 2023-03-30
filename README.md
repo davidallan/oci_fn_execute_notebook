@@ -10,6 +10,7 @@ There are various properties parameterized for demonstration purposes, more coul
   * compartmentId the compartment Ocid where the job will be created
   * outputFolder the output folder in OCI to write the results ie. oci://bucketName@namespace/objectFolderName
 
+The function is based on the Python example in [https://accelerated-data-science.readthedocs.io/en/latest/user_guide/jobs/run_notebook.html#tensorflow-example] (TensorFlow example) the OCI Data Science accelerated data science documentation.
 
 <h2>Permissions</h2>
 Example permissions to test from functions and from OCI Data Integration.
